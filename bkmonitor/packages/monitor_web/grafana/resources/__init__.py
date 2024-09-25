@@ -13,4 +13,5 @@ from .log import *  # noqa
 from .manage import *  # noqa
 from .profile import *  # noqa
 from .time_series import *  # noqa
+from .trace import *  # noqa
 from .unify_query import *  # noqa

@@ -155,4 +155,10 @@ class GrafanaViewSet(ResourceViewSet):
         # 获得profile维度，可选值
         ResourceRoute("GET", resource.grafana.get_profile_label, endpoint="get_profile_label"),
         ResourceRoute("GET", resource.grafana.get_profile_label_values, endpoint="get_profile_label_values"),
+        # trace 查询
+        ResourceRoute("GET", resource.grafana.get_trace_application, endpoint="get_trace_application"),
+        ResourceRoute("GET", resource.grafana.get_trace_fields, endpoint="get_trace_fields"),
+        ResourceRoute("POST", resource.grafana.get_field_values, endpoint="get_field_values"),
+        ResourceRoute("POST", resource.grafana.query_trace, endpoint="query_trace"),
+        ResourceRoute("POST", resource.grafana.show_trace_detail, endpoint="show_trace_detail"),
     ]
